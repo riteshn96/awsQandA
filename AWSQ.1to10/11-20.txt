@@ -1,0 +1,11 @@
+#AWS Questions 11 to 20
+
+11. What are differnet instance types and their uses?
+A.  General Purpose (T, M families): Balanced CPU, memory & networking used for	Web servers, small databases, app hosting
+    Compute Optimized (C family): High-performance CPUs used for High-traffic web servers, gaming, ML inference
+    Memory Optimized (R, X, Z families): High RAM for large datasets used for In-memory databases (Redis, SAP HANA), real-    time big data analytics.
+    Storage Optimized (I, D, H families): Fast local storage (SSD/HDD) used for Big data, databases, data warehouse.
+    Accelerated Computing (P, G, F families): GPUs & FPGAs for parallel workloads used for Machine learning, AI, video
+    rendering, scientific computing.
+
+12. 

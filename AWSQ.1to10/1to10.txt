@@ -25,3 +25,18 @@ A. An Amazon EC2(Elastic Compute Cloud) is a virtual server in AWS cloud. To cre
 
 7. What are uses of security groups?
 A. Some of the key uses of security groups are restricting access to EC2 instances, controlling web server traffic, secure   database access, managing traffic for load balancers, protecting internal services.
+
+8. How are 2 EC2 instances connected?
+A. 1. If both instances are in SAME VPC, they can connect using private IP addresses.
+   2. Connecting across different VPC's through VPC Peering to establish private communication
+   3. Connecting via Public IP, Elastic load balancer(ELB), AWS System Manager are other ways.
+
+9. How to connect EC2 instance on premises?
+A. Connecting EC2 instance to on premises network allows secure communication between AWS and local servers.
+   VPN(Site-to-Site), AWS direct connect, AWS transit gateway, Using SSh over public internet are methods.
+
+10. What is bootstrap of a server and its uses?
+A. Bootstrapping a server refers to the automated process of configuring a server when it first starts. It involves
+   running scripts (usually Shell or PowerShell) to install software, update configurations, and set up the necessary
+   environment without manual intervention.
+   Its uses are Automated setup, system configuration, service initialization, instance customization etc.

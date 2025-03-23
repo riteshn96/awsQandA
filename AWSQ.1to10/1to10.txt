@@ -1,0 +1,27 @@
+#AWS Questions 1 to 10
+
+1. What is IAM User?
+A. An IAM user in AWS represents an individual that requires access to various AWS resources. 
+
+2. How to give access to IAM users?
+A. Go to Add permissions. We can attach existing policies or create custom policy and attach it to the user.
+
+3. Policies written in which language?
+A. AWS IAM policies are written in JSON(JavaScript Object Notation)language.
+
+4. What is diff. btw region and availability zones?
+A. An AWS region is area where AWS has multiple data centers where as an availability zone is an individual data center.
+
+5. How MFA works in AWS?
+A. Multi-Factor Authentication (MFA) adds an extra layer of security to AWS accounts by requiring a second authentication    factor (one-time code) in addition to the password. This helps prevent unauthorized access even if the password is
+   compromised.
+
+6. What is basic process of building an EC2 instance?
+A. An Amazon EC2(Elastic Compute Cloud) is a virtual server in AWS cloud. To create an EC2 instance:
+   # Go to EC2 dashboard and click launch instance.
+   # Choose an AMI(Amazon Machine image)[Amazon linux, ubuntu, windows... etc] and choose an Instance type[t2.micro etc..]
+   # Configure Instance setting [network, subnet, IP...]
+   # Configure Security group and create or select an existing key pair
+
+7. What are uses of security groups?
+A. Some of the key uses of security groups are restricting access to EC2 instances, controlling web server traffic, secure   database access, managing traffic for load balancers, protecting internal services.

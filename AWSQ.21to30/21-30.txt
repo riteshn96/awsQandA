@@ -1,0 +1,52 @@
+#AWS Questions 21 to 30
+
+21. What are ENI and EBS?
+A.  An ENI (Elastic Network Interface) is a virtual network adapter that allows EC2 instances to connect to a VPC             (VirtualPrivate Cloud). 
+    EBS (Elastic Block Store) is persistent storage used by EC2 instances. It provides highly available and durable           block-level storage for data.
+
+22. EBS types and disadvantages?
+A.  gp3 (General SSD) disadvantage: Not the best for high IOPS
+    io2 (Provisioned SSD) disadvantage: Expensive
+    st1 (Throughput HDD) disadvantage: Not for random I/O
+    sc1 (Cold HDD) disadvantage: Slow, high latency
+
+23. What is advantage of EBS snapshot?
+A.  An EBS Snapshot is a point-in-time backup of an EBS volume, stored in Amazon S3. It allows you to restore, copy, and      migrate data without impacting the running EC2 instance. Backup and restore, faster disaster recovery, instance           migration and cloning are some of its uses.
+
+24. What is EBS encryption?
+A.  EBS Encryption is an AWS feature that encrypts your EBS volumes and snapshots to protect data at rest. It ensures that    all data, backups, and traffic between EC2 and EBS are securely encrypted without requiring user intervention.
+
+25. What is EBS in relation to server?
+A.  EBS (Elastic Block Store) is a persistent storage solution for AWS EC2 instances. In relation to a server, EBS acts       like a hard drive (HDD/SSD) attached to a cloud-based virtual machine (EC2 instance). Its advantages are:
+    Persistent Storage → Data remains even if the EC2 instance is stopped.
+    Flexible & Scalable → Increase storage without downtime.
+    High Performance → SSD-based EBS (gp3, io2) delivers fast IOPS.
+    Secure → Supports encryption for data protection.
+    Backup & Recovery → Automated EBS Snapshots for quick disaster recovery.
+
+26. What is EFS?
+A.  EFS (Amazon Elastic File System) is a fully managed, scalable, shared file storage service for AWS. It allows multiple    EC2 instances to access the same file system simultaneously, making it ideal for shared storage and distributed
+    applications.
+
+27. How can we make an application better with scalability?
+A.  Scalability ensures your application can handle growing workloads efficiently without performance degradation. AWS
+    provides multiple tools and best practices to scale dynamically based on demand.
+
+28. What are the types of scaling?
+A.  Vertical Scaling (Scaling Up/Down):
+    Increase or decrease instance size (e.g., upgrading EC2 from t3.medium to m5.large).
+    Pros: Simple, no architecture changes. Cons: Limited by hardware capacity, downtime required for resizing.
+    Horizontal Scaling (Scaling Out/In):
+    Add more instances when demand increases and remove them when it's low.
+    Pros: Highly scalable, no single point of failure.
+    Cons: Needs load balancing and distributed architecture.
+
+29. What are advantages of high availability?
+A.  High Availability (HA) ensures that applications remain operational with minimal downtime, even in case of failures.
+    It is achieved by redundancy, failover mechanisms, and fault tolerance across multiple servers, data centers, or cloud    regions. Advantages: Minimal Downtime, Fault Tolerance, Better User Experience, Disaster Recovery, 
+    Scalability & Performance, Compliance & SLA's, Cost Savings,  Multi-Region & Global Reach.
+
+30. Difference between horizontal and vertical scaling?
+A.  Refer Ans. 28.
+
+

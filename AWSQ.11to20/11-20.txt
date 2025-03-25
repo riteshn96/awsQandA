@@ -8,4 +8,53 @@ A.  General Purpose (T, M families): Balanced CPU, memory & networking used for	
     Accelerated Computing (P, G, F families): GPUs & FPGAs for parallel workloads used for Machine learning, AI, video
     rendering, scientific computing.
 
-12. 
+12. How is an EC2 instance connected?
+A.  An EC2 instance can be connected via SSh(linux) or Remote Desktop Protocol(RDP){Windows}
+
+13. How is costing in EC2 instance?
+A.  Costing in EC2 depends on instance type, region, billing model, storage etc.
+
+14. How many types of instances are based on availability and what are the types?
+A.  Short-term, flexible workloads? → On-Demand
+    Long-running applications? → Reserved Instances (RI)
+    Non-critical, fault-tolerant tasks? → Spot Instances
+    Need full hardware control? → Dedicated Hosts
+    Security-sensitive applications? → Dedicated Instances
+    Critical apps needing guaranteed capacity? → Capacity Reservations
+
+15. What ios public IP and private IP and its uses?
+A.  A Public IP is an Internet-facing address assigned to an EC2 instance, allowing it to communicate outside AWS.
+    Uses:  Accessing EC2 instances from the internet (e.g., SSH, RDP).
+    Hosting websites, APIs, or public-facing applications.
+    Allowing users to interact with a service hosted on EC2.
+    A Private IP is used for internal communication within an AWS VPC (Virtual Private Cloud).
+    Uses: Connecting EC2 instances within the same VPC (private networking).
+    Internal database access (e.g., RDS, NoSQL, or custom servers).
+    Running multi-tier applications where backend servers should not be exposed to the internet.
+
+16. How can we make public IP to static?
+A.  By default, AWS assigns dynamic public IPs to EC2 instances, meaning the IP changes every time the instance is stopped    and restarted. To make a public IP static, you need to use an Elastic IP (EIP).
+    Steps: Allocate an Elastic IP, Associate the Elastic IP with an EC2 Instance, Verify the elastic IP assignment.
+
+17. How can we connect EC2 instance to internet?
+A.  Steps: Assing a public IP address, Attach an Internet Gateway, Update Route table to allow internet traffic, configure    security group.
+
+18. What is elastic  IP and its uses?
+A.  An Elastic IP (EIP) in AWS is a static, public IPv4 address that can be assigned to an EC2 instance. Unlike a regular     public IP, which changes when an instance is restarted, an Elastic IP remains the same until manually released.
+    Uses: Hosting Websites & APIs, Failover & High Availability, VPN & Remote Access, Load Balancer Alternative,
+    Reverse Proxy & Firewall Rules
+
+19. Difference between vcpu and cpu and its uses?
+A.  A vCPU (virtual CPU) is a portion of a physical CPU core allocated to a virtual machine (VM) like an AWS EC2 instance.
+    vCPUs allow scalable cloud computing without dedicated physical servers.
+    Used in AI, gaming, web hosting, video processing, and HPC.
+    AWS Auto Scaling & containerized apps rely on vCPU-based performance.
+    vCPUs are allocated based on EC2 instance types (e.g., c5, m6g, p4d).
+
+20. What is EC2 hibernate and its advantages?
+A.  EC2 Hibernate is a feature that allows you to pause and resume an EC2 instance while preserving the in-memory (RAM)
+    state. Unlike stopping an instance (which clears memory), hibernation saves the RAM contents to disk (EBS) and
+    restores it when the instance is restarted.
+    It’s similar to hibernation mode in laptops, where you can shut down and resume without losing open applications.
+    Uses: Faster Startup Time, Saves Running Costs, Preserves Application State, Ideal for Long-Running Workloads,
+    Security & Encryption.
